@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+    <title>Monocultured</title>
+    <script>
+      window.onload = function() {
+        var button = document.getElementById("border_visibility");
+        button.onclick = function() {
+          var elements = document.querySelectorAll("*");
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.toggle("hidden-border");
+          }
+
+          if (button.textContent === "Hide borders") {
+            button.textContent = "Show borders";
+          } else {
+            button.textContent = "Hide borders";
+          }
+        };
+      };
+    </script>
+  </head>
+  <body class="index">
+    <header>
+        <h1>UX design & research portfolio</h1>
+        <button type="button" id="border_visibility">Hide borders</button>
+    </header>
+    <main>
+        <section title="about me" class="main_content"">
+            <p>My name is Mateusz Pożar and I'm currently studying UX Design at IT-högskolan with an expected graduation summer 2024.</p>
+            <p>Before embarking on this journey I worked eight years as a project manager, in addition to running my own professional art practice.</p>
+            <p>Through my UX Design program I've learned user research methods and design thinking principles, as well as practical software skills, which I've applied to real world challenges.</p>
+            <p>If you're seeking a clever and empathetic UX designer & researcher with a unique background and unwavering enthusiasm, let's talk!</p>
+        </section>
+    </main>
+    <div title="nav and contact info" class="nav_contact">
+      <nav>
+        <ul>
+          <li>About me</li>
+          <li><a href="RISE_hardware.html">RISE: Hardware usability study </a></li>
+          <li><a href="RISE_facilitation.html">RISE: Workshop facilitation</a></li>
+        </ul>
+      </nav>
+      <section title="contact_info">
+        <h2>Get in touch!</h2>
+        <ul>
+          <li><a href="mailto:mateusz@pozar.se">mateusz@pozar.se</a></li>
+          <li>+46 (0)739 47 46 52</li>
+          <li>Gothenburg, Sweden</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

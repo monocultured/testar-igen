@@ -1,0 +1,162 @@
+body,
+html {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited,
+.breadcrumb a:hover,
+.breadcrumb a:active {
+  font-size: 0.8rem;
+  color: black;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-skip-ink: none;
+  text-decoration-color: #094675;
+}
+
+h1,
+h2,
+ul {
+  border-style: dotted;
+  border-color: red;
+  border-width: 1px;
+  font-family: serif, Times, "Times New Roman", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: green;
+  border-width: 5px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+  background-image: url(hero1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: navy;
+  color: lightgoldenrodyellow;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+body.hardware {
+  background-image: url(RISE_hardware.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: navy;
+  color: black;
+}
+
+body.facilitation {
+  background-color: rgb(185, 0, 0);
+  background-image: none;
+}
+
+.main_hardware {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+
+header {
+  border-style: solid;
+  border-color: pink;
+  border-width: 5px;
+  display: flex;
+  align-items: center;
+}
+
+section.main_content {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  border-style: solid;
+  border-color: maroon;
+  border-width: 5px;
+  min-width: 50vw;
+  max-width: 700px;
+}
+
+main.facilitering_layout {
+  display: flex;
+  flex-direction: row;
+}
+
+section.main_content p {
+  margin-bottom: 0.125rem;
+}
+section.main_content h2 {
+  margin-top: 1rem;
+}
+
+div.nav_contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 5px;
+  font-size: 1.5rem;
+  min-height: 15vh;
+  margin-right: 2rem;
+}
+
+div.nav_contact a:link,
+a:visited,
+.nav_contact li {
+  color: white;
+  text-decoration-thickness: 0.5rem;
+  text-decoration-skip-ink: none;
+  text-decoration-color: #1279c8;
+  line-height: 2.25rem;
+}
+
+div.nav_contact a:hover,
+a:active {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  section.main_content {
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    padding: 1rem;
+  }
+  div.nav_contact {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  div.nav_contact h2 {
+    margin-top: 2rem;
+  }
+}
+.hidden-border {
+  border-style: hidden !important;
+}
+
+button {
+  margin-left: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: lightcyan;
+}
+
+/*# sourceMappingURL=style.css.map */
